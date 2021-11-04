@@ -1,0 +1,53 @@
+{
+  "name": "final-vk-miniapps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=3000 HTTPS=true craco start",
+    "build": "craco build",
+    "predeploy": "npm run build",
+    "test": "craco test",
+    "deploy": "vk-miniapps-deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "cross-env": "^7.0.3",
+    "postcss": "^7.0.39",
+    "react-hot-loader": "^4.13.0",
+    "react-scripts": "^4.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.0",
+    "@vkontakte/icons": "^1.133.0",
+    "@vkontakte/vk-bridge": "^2.4.8",
+    "@vkontakte/vk-miniapps-deploy": "^0.0.25",
+    "@vkontakte/vkjs": "^0.22.1",
+    "@vkontakte/vkui": "^4.20.0",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.2",
+    "eruda": "^2.4.1",
+    "eruda-code": "^2.0.0",
+    "eruda-dom": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vk-qr": "^1.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
