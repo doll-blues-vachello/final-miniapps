@@ -80,7 +80,7 @@ const Storage = ({ id, go }) => {
         ) : (
           <Div>
             <Text>К сожалению, ты ещё не отсканировал ни одного QR</Text>
-            <Button stretched size="m" mode="primary">
+            <Button stretched size="m" mode="primary" onClick={go} data-to='reader'>
               Возможно стоит попробовать?
             </Button>
           </Div>
