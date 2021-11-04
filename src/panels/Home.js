@@ -39,6 +39,20 @@ const Home = ({ id, go }) => {
           </Button>
         </Div>
       </Group>
+
+      <Group>
+        <Div header={<Header mode="secondary">Story Maker</Header>}>
+          <Button
+            stretched
+            size="l"
+            mode="secondary"
+            onClick={go}
+            data-to="history"
+          >
+            Make a Story
+          </Button>
+        </Div>
+      </Group>
     </Panel>
   );
 };

@@ -6,6 +6,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Home from './panels/Home';
 import Reader from './panels/Reader';
 import Storage from './panels/Storage';
+import History from './panels/History';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
 				<View activePanel={activePanel}>
 					<Home id='home' go={go} />
 					<Reader id='reader' go={go} />
+					<History id='history' go = {go} />
 					<Storage id='storage' go={go} />
 				</View>
 			</AppRoot>
